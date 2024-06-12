@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <h1>RESERVATION</h1>
+    <form action="reserver.php" method="post" name="nom_form">
+        <fieldset>
+            <legend>
+                contact
+            </legend>
+            <label for="con">conatct:</label>
+            <input type="text" name="rahma" id="con" required class="block">
+            <label for="tel">telephone:</label>
+            <input type="tel" name="rahma" id="tel" pattern="[0-9]{2} [0-9]{6}" placeholder="22 25878" required class="block">
+            <label for="em">email:</label>
+            <input type="email" name="rahma" id="em" required class="block">
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                type du billiet
+            </legend>
+            <input type="radio" value="a" name="bil" id="c1">
+            <label for="c1">aller simple</label><br />
+            <input type="radio" value="r" name="bil" id="c2">
+            <label for="c2">aller retour</label><br />
+            <a href="multi.html">multi destinations</a>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                destination
+            </legend>
+
+
+            <label for="d1">de</label>
+            <select name="de" id="d1">
+                <option value="MA" id="wehd"> amsterdam </option>
+                <option value="RA"> abidjan </option>
+                <option value="FE"> alger </option>
+                <option value="AG"> bamakao </option>
+                <option value="TA"> paris </option>
+            </select>
+            <br>
+            <label for="d2">vers</label>
+            <select name="vers" id="d2">
+                <option value="RA"> abidjan </option>
+                <option value="FE"> alger </option>
+                <option value="MA"> amsterdam </option>
+                <option value="AG"> bamakao </option>
+                <option value="TA"> paris </option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                dates
+            </legend>
+            <label for="dat1">date de depart:</label>
+            <input type="date" name="ladate" id="dat1">
+            <br>
+            <label for="dat2">date de retour:</label>
+            <input type="date" name="ladate" id="dat2">
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                voyageurs
+            </legend>
+            <label for="voy1">adulte(25+):</label>
+            <input type="number" name="ladate" id="voy1" value="1" max="6">
+            <label for="voy2">jeunes(12-24):</label>
+            <input type="number" name="ladate" id="voy2" value="0" max="6">
+            <br>
+            <label for="voy3">enfantss(2-11):</label>
+            <input type="number" name="ladate" id="voy3" value="0" max="6">
+            <label for="voy4"> bebe&lt2 </label>
+            <input type="number" name="ladate" id="voy3" value="0" max="6">
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                type du payment
+            </legend>
+            <input type="radio" value="a" name="bil" id="t1">
+            <label for="c1">paiment carete de credit</label><br />
+            <input type="radio" value="r" name="bil" id="t2">
+            <label for="c2">paiment edinar poste</label>
+
+        </fieldset>
+
+        <fieldset>
+            <button type="submit" name="but1"><img src="ok.png" /> </button>
+            <button type="reset" name="but1"><img src="cancel.png" /> </button>
+
+        </fieldset>
+
+
+
+
+
+
+
+
+    </form>
+</body>
+
+</html>

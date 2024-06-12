@@ -1,0 +1,42 @@
+
+
+form{
+    background: url(parcours.jpg) no-repeat right bottom;
+}
+
+
+h1{
+font-size: 1.2em;
+padding: 15px;
+vertical-align: middle;
+box-shadow:  5px 5px 8px 8px lightblue, inset 5px 5px 30px -1px steelblue ;
+position: relative;
+text-shadow: 2px 2px lightblue ;
+text-align: center; 
+border: 1px solid steelblue ;
+color: steelblue;
+border-radius: 120px 40px;
+}
+
+fieldset{
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 10px lightblue;
+}
+
+legend{
+    text-shadow: 2px 2px lightblue ;
+}
+
+.block{
+    display: block;
+}
+
+input{
+   
+    border-radius: 20px;
+    background-color: lightblue;
+}
+
+a:hover{
+font-style: italic;
+}
